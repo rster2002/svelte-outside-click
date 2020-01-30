@@ -1,0 +1,22 @@
+{
+    "name": "svelte-outside-click",
+    "version": "1.0.0",
+    "description": "Handle clicks outside of your specified element.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "rster2002",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rster2002/svelte-outside-click.git"
+    },
+    "keywords": [
+        "svelte"
+    ],
+    "bugs": {
+        "url": "https://github.com/rster2002/svelte-outside-click/issues"
+    },
+    "homepage": "https://github.com/rster2002/svelte-outside-click#readme"
+}
