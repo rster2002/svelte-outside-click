@@ -1,6 +1,6 @@
 export default function clickOutside(node, onEventFunction) {
     const handleClick = event => {
-        var { path } = event;
+        var path = event.composedPath();
 
         if (!path.includes(node)) {
             onEventFunction();
