@@ -1,22 +1,8 @@
 export default function clickOutside(node, onEventFunction) {
-    const isNestedChild = (parent, child) => {
-        var currentNode = child;
-
-        while (currentNode !== null) {
-            if (currentNode.parentNode === parent) {
-                return true;
-            } else {
-                currentNode = currentNode.parentNode;
-            }
-        }
-
-        return false;
-    }
-
     const handleClick = event => {
-        var { target } = event;
+        var { path } = event;
 
-        if (!node.isSameNode(target) && !isNestedChild(node, target)) {
+        if (!path.includes(node)) {
             onEventFunction();
         }
     }
